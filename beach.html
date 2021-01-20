@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon_.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<title>Virtual Bar</title>
+<style>
+/* Safari syntax */
+:-webkit-full-screen {
+}
+
+/* IE11 */
+:-ms-fullscreen {
+}
+
+/* Standard syntax */
+:fullscreen {
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(hatton-light-webfont.woff);
+}
+* {
+  font-family: myFirstFont;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MyWebFont", sans-serif, sans-serif;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  display: inline-grid;
+  align-content:center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  top: 0;
+  background: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  border: none;
+
+}
+.bottom {
+  position: fixed;
+  display: inline-grid;
+  align-content:center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  border: none;
+}
+
+#myBtn, #Song, #Full, #another {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3vw;
+  padding: 0px;
+  /* border-style: solid;
+  border-color: white;
+  border-width: thin;
+  border-radius: 50%; */
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0px;
+  /* height:4vw; */
+  text-align: center;
+  background-color: none;
+  text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+#myBtn:hover, #Song:hover, #Full:hover, #another:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: #000000;
+  text-shadow: 0 0 5px #FFFFFF;
+  transform: scale(1.5) translate(1px, 1px) rotate(10deg);
+  /* background-color: white; */
+  /* border-style: solid;
+  border-color: white;
+  border-width: thin;
+  border-radius: 50%; */
+}
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+}
+a:link, a:visited {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3vw;
+  padding: 0px;
+  /* border-style: solid;
+  border-color: white;
+  border-width: thin;
+  border-radius: 50%; */
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0px;
+  /* height:4vw; */
+  text-align: center;
+  background-color: none;
+  text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
+}
+a:hover {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: #000000;
+  text-shadow: 0 0 5px #FFFFFF;
+  /* background-color: white; */
+  /* border-style: solid;
+  border-color: white;
+  border-width: thin;
+  border-radius: 50%; */
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <!-- <source src="beach.mp4" type="video/mp4"> -->
+  <source src="beach1.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- <div class="content" style="padding-top: 0px;"> -->
+<div class="content" style="">
+  <div id="myBtn" onclick="myFunction()">VIDEO STOP / PLAY</div>
+  <span id="title">🤍 Enjoy yourself! 🤍</span>
+  <div id="Song" onClick="playPause()">
+  <audio src="Chet Baker - Born to Be Blue.m4a" autoplay loop></audio>
+  SOUND ON / OFF
+</div>
+</div>
+<div class="bottom"> <div id="another"><a href = 'index.html'>ANOTHER ONE!</a></div>
+<!-- &larr; -->
+<div></div>
+<!-- <div id="title"><a href = 'grid3.html'>MY RECIPE</a></div> -->
+<div id="Full" onclick="openFullscreen()">FULL SCREEN </div>
+<!-- <div id="Full" onclick="closeFullscreen()">CLOSE FULL SCREEN</div> </div> -->
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    // btn.innerHTML = "Video Pause";
+  } else {
+    video.pause();
+    // btn.innerHTML = "Video Play";
+  }
+}
+
+
+</script>
+
+
+
+    <script>
+      var aud = document.getElementById("Song").children[0];
+      var isPlaying = false;
+      aud.pause();
+
+      function playPause() {
+        if (isPlaying) {
+          aud.pause();
+        } else {
+          aud.play();
+        }
+        isPlaying = !isPlaying;
+      }
+    </script>
+
+    <script>
+    var elem = document.documentElement;
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+
+    function closeFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE11 */
+        document.msExitFullscreen();
+      }
+    }
+    </script>
+
+
+
+</body>
+</html>
