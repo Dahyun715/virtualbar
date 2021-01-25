@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8" />
 <title>Virtual Bar</title>
+<script src="src/emojiCursor.js"></script>
 <style>
 /* Safari syntax */
 :-webkit-full-screen {
@@ -191,9 +192,9 @@ function myFunction() {
 
 </script>
 
-
-
     <script>
+      new emojiCursor();
+
       var aud = document.getElementById("Song").children[0];
       var isPlaying = false;
       aud.pause();
