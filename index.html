@@ -16,7 +16,6 @@
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
-
      gtag('config', 'G-YLD9RSC1Q4');
     </script>
     <style>
@@ -26,6 +25,8 @@
       }
       * {
         font-family: myFirstFont;
+        font-weight: 100;
+        font-style:none;
       }
       html {
         background: linear-gradient(
@@ -33,21 +34,15 @@
           #2c389c 0%,
           #5260da 30%,
           #f5acde 60%,
-          #feceb8 90%
-        );
-        /* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>💚</text></svg>") 16 0,auto; */
+          #feceb8 90% );
       }
       body {
-        font-family: "MyWebFont", sans-serif, sans-serif;
-        /* background-image: repeating-radial-gradient(red, yellow 10%, green 20%); */
         background: linear-gradient(
           to bottom,
           #2c389c 0%,
           #5260da 30%,
           #f5acde 60%,
-          #feceb8 90%
-        );
-        /*,#5260da 98%, #2C389C 100%*/
+          #feceb8 90% );
         background-repeat: no-repeat;
         min-height: 100%;
         width: 100%;
@@ -64,62 +59,16 @@
         margin-block-start: 0.25em;
         margin-block-end: 0em;
         margin-left: 0.4em;
-        /* animation: flowing 12s linear infinite;
-        transform: translateX(30%); */
         animation-name: spin;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         animation-duration: 3s;
-
       }
-        /* @keyframes flowing {
-          50% {
-            transform: translateX(-30%);
-          }
-          100% {
-            transform: translateX(30%);
-          }
-        } */
-        @keyframes spin {
-          from { transform: rotateX(0deg); }
-          to { transform: rotateX(-360deg); }
-        }
-        h2{
-          color: #ffffff;
-          font-size: 3vw;
-          text-align: right;
-          float: right;
-          display: inline;
-          margin-block-start: 0.25em;
-          margin-block-end: 0em;
-          margin-right: 0.3em;
-          /* animation: flowing 12s linear infinite;
-          transform: translateX(30%); */
-          animation-name: spin;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-          animation-duration: 3s;
-
-        }
-          /* @keyframes flowing {
-            50% {
-              transform: translateX(-30%);
-            }
-            100% {
-              transform: translateX(30%);
-            }
-          } */
-          @keyframes spin {
-            from { transform: rotateX(0deg); }
-            to { transform: rotateX(-360deg); }
-          }
-
-      /* #title {
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-      } */
-
-      /* h2 {
+      @keyframes spin {
+        from { transform: rotateX(0deg); }
+        to { transform: rotateX(-360deg); }
+      }
+      h2{
         color: #ffffff;
         font-size: 3vw;
         text-align: right;
@@ -128,9 +77,16 @@
         margin-block-start: 0.25em;
         margin-block-end: 0em;
         margin-right: 0.3em;
-      } */
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+      }
+      @keyframes spin {
+        from { transform: rotateX(0deg); }
+        to { transform: rotateX(-360deg); }
+      }
       .grid-container {
-        /* background-color: white; */
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: none;
@@ -138,55 +94,26 @@
         margin: none;
       }
       .grid-item {
-        /* border: 0.5px solid none; */
         padding: none;
         font-size: 30px;
         text-align: center;
       }
-      .grid-img1,
-      .grid-img2,
-      .grid-img3,
-      .grid-img4 {
+      .grid-img1,.grid-img2,
+      .grid-img3,.grid-img4 {
         max-width: 100%;
         max-height: 100%;
       }
-      #grid-item1,
-      #grid-item2,
-      #grid-item3,
-      #grid-item4,
-      #grid-item5,
-      #grid-item6,
-      #grid-item7,
-      #grid-item8,
-      #grid-item9,
-      #grid-item10,
-      #grid-item11,
-      #grid-item12,
-      #grid-item13,
-      #grid-item14,
-      #grid-item15,
+      #grid-item1,#grid-item2,#grid-item3,#grid-item4,#grid-item5,#grid-item6,#grid-item7,#grid-item8,
+      #grid-item9,#grid-item10,#grid-item11,#grid-item12,#grid-item13,#grid-item14,#grid-item15,
       #grid-item16 {
         cursor: pointer;
         transition: 0.3s;
       }
-      #grid-item1:hover,
-      #grid-item2:hover,
-      #grid-item3:hover,
-      #grid-item4:hover,
-      #grid-item5:hover,
-      #grid-item6:hover,
-      #grid-item7:hover,
-      #grid-item8:hover,
-      #grid-item9:hover,
-      #grid-item10:hover,
-      #grid-item11:hover,
-      #grid-item12:hover,
-      #grid-item13:hover,
-      #grid-item14:hover,
-      #grid-item15:hover,
+      #grid-item1:hover,#grid-item2:hover,#grid-item3:hover,#grid-item4:hover,#grid-item5:hover,#grid-item6:hover,#grid-item7:hover,#grid-item8:hover,
+      #grid-item9:hover,#grid-item10:hover,#grid-item11:hover,#grid-item12:hover,#grid-item13:hover,#grid-item14:hover,#grid-item15:hover,
       #grid-item16:hover {
         opacity: 0.65;
-      cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>👆</text></svg>") 16 0,auto;
+        cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>👆</text></svg>") 16 0,auto;
       }
       /* The Modal (background) */
       .modal {
@@ -201,9 +128,6 @@
         overflow: scroll; /* Enable scroll if needed */
         background: rgb(214,182,212);
         background: radial-gradient(circle, rgba(214,182,212,1) 0%, rgba(85,70,203,1) 100%);
-        /* background-color: rgb(0, 0, 0); /* Fallback color */
-        /*background-color: rgba(0, 0, 0, 1); /* Black w/ opacity */
-
       }
       /* Modal Content (image) */
       .modal-content {
@@ -226,7 +150,6 @@
         height: 400px;
       }
       #goBar{
-        /* padding-bottom: 50px; */
         text-align: center;
         font-size: 2.5vw;
         color: #1C584B;
@@ -267,7 +190,6 @@
       }
       .close:hover,
       .close:focus {
-        /* color: #bbb; */
         text-decoration: none;
         cursor: pointer;
       }
@@ -292,7 +214,6 @@
         display: none;
       }
       label {
-        /* border: 1px solid #fff; */
         padding: 10px;
         display: block;
         position: relative;
@@ -307,7 +228,6 @@
       }
       label::before {
         background-color: white;
-        /* color: white; */
         content: " ";
         display: block;
         border-radius: 50%;
@@ -326,14 +246,10 @@
         border-color: none;
       }
       :checked + label img {
-
-        /* Start the shake animation and make the animation last for 0.5 seconds */
         animation: shake 3.5s;
-
         /* When the animation is finished, start again */
         animation-iteration-count: infinite;
         }
-
       @keyframes shake {
         0% { transform: scale(1.5) translate(1px, 1px) rotate(0deg); }
         10% { transform: scale(1.6) translate(-1px, -2px) rotate(-1deg); }
@@ -367,265 +283,136 @@
         font-size: 2.5vw;
       }
       #ttlForRec:hover {
-
       }
-      audio{
+      audio {
         display:none;
       }
-
     </style>
   </head>
-  <body>
 
+  <body>
     <div id="title">
       <h1>Welcome to our virtual bar!</h1>
       <h2>Choose only one for each category</h2>
     </div>
-    <br />
+    <br>
     <div id="imageAlt"></div>
-    <br />
-
+    <br>
     <div class="grid-container" style="width: 100%; height: 100%;">
-      <input
-        type="checkbox"
-        className="check"
-        name="group1"
-        id="checkbox1"
-        data-audio="sound/02.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox1"
-        ><image
-          id="grid-item1"
-          class="grid-img1"
-          src="emoji/ingredients1.png"
-          alt="1. Chop 3 strawberries into small pieces! 🍓"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group1"
-        id="checkbox2"
-        data-audio="sound/01.mpeg"
-        onchange="audioFunction(this)"
-      /><label for="checkbox2"
-        ><image
-          id="grid-item2"
-          class="grid-img1"
-          src="emoji/ingredients2.png"
-          alt="1. Cut halb of a lemon into thin slices and make lemon juice! 🍋"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group1"
-        id="checkbox3"
-        data-audio="sound/03.mpeg"
-        onchange="audioFunction(this)"
-      /><label for="checkbox3"
-        ><image
-          id="grid-item3"
-          class="grid-img1"
-          src="emoji/ingredients3.png"
-          alt="1. Blend frozen pineapple or mango like smoothie! 🍍🥭"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group1"
-        id="checkbox4"
-        data-audio="sound/04.mpeg"
-        onchange="audioFunction(this)"
-      /><label for="checkbox4"
-        ><image
-          id="grid-item4"
-          class="grid-img1"
-          src="emoji/ingredients4.png"
-          alt="1. Prepare 8 oz crushed ice and add 1 oz lilet Blanc! 🧊"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group2"
-        id="checkbox5"
-        data-audio="sound/05.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox5"
-        ><image
-          id="grid-item5"
-          class="grid-img2"
-          src="emoji/mood1.png"
-          alt="2.  Add 4 oz sparkling wine! 🍾"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group2"
-        id="checkbox6"
-        data-audio="sound/06.mpeg"
-        onchange="audioFunction(this)"
-      /><label for="checkbox6"
-        ><image
-          id="grid-item6"
-          class="grid-img2"
-          src="emoji/mood2.png"
-          alt="2. Add 2 oz gin! 💎"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group2"
-        id="checkbox7"
-        data-audio="sound/07.mpeg"
-        onchange="audioFunction(this)"
-      /><label for="checkbox7"
-        ><image
-          id="grid-item7"
-          class="grid-img2"
-          src="emoji/mood3.png"
-          alt="2. Add 2 oz rye whiskey or bourbon! 🥃"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group2"
-        id="checkbox8"
-        data-audio="sound/08.mpeg"
-        onchange="audioFunction(this)"
-        /><label for="checkbox8"
-        ><image
-          id="grid-item8"
-          class="grid-img2"
-          src="emoji/mood4.png"
-          alt="2. Add 1 oz Campari and 1 oz vermouth! 🎈"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group3"
-        id="checkbox9"
-        data-audio="sound/09.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox9"
-        ><image
-          id="grid-item9"
-          class="grid-img3"
-          src="emoji/location1.png"
-          alt="3. Shake with tonic water! 💫"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group3"
-        id="checkbox10"
-        data-audio="sound/10_1.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox10"
-        ><image
-          id="grid-item10"
-          class="grid-img3"
-          src="emoji/location2.png"
-          alt="3. Strain into chilled glass! 🌊"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group3"
-        id="checkbox11"
-        data-audio="sound/11.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox11"
-        ><image
-          id="grid-item11"
-          class="grid-img3"
-          src="emoji/location3.png"
-          alt="3. Do not stir! ❌"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group3"
-        id="checkbox12"
-        data-audio="sound/12.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox12"
-        ><image
-          id="grid-item12"
-          class="grid-img3"
-          src="emoji/location4.png"
-          alt="3. Shake with ice! 🧊"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group4"
-        id="checkbox13"
-        data-audio="sound/13.mpeg"
-        onchange="audioFunction(this)"
-      /><label for="checkbox13"
-        ><image
-          id="grid-item13"
-          class="grid-img4"
-          src="emoji/food1.png"
-          alt="4. Garnish with orange twist! 🍊"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group4"
-        id="checkbox14"
-        data-audio="sound/14.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox14"
-        ><image
-          id="grid-item14"
-          class="grid-img4"
-          src="emoji/food2.png"
-          alt="4. Add ice to fill glass and garnish with lemon twist! 🧊🍋"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group4"
-        id="checkbox15"
-        data-audio="sound/15.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox15"
-        ><image
-          id="grid-item15"
-          class="grid-img4"
-          src="emoji/food3.png"
-          alt="4. Garnish with lime slices and mint bouquet! 🌱"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
-      <input
-        type="checkbox"
-        className="check"
-        name="group4"
-        id="checkbox16"
-        data-audio="sound/16.mp3"
-        onchange="audioFunction(this)"
-      /><label for="checkbox16"
-        ><image
-          id="grid-item16"
-          class="grid-img4"
-          src="emoji/food4.png"
-          alt="4. Add ice to fill glass and no garnish! 🧊"
-          onclick="myFunction(this)"
-      /></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group1" id="checkbox1"
+      data-audio="sound/02.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox1">
+      <image id="grid-item1" class="grid-img1" src="emoji/ingredients1.png"
+      alt="1. Chop 3 strawberries into small pieces! 🍓"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group1" id="checkbox2"
+      data-audio="sound/01.mpeg" onchange="audioFunction(this)"/>
+      <label for="checkbox2">
+      <image id="grid-item2" class="grid-img1" src="emoji/ingredients2.png"
+      alt="1. Cut halb of a lemon into thin slices and make lemon juice! 🍋"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group1" id="checkbox3"
+      data-audio="sound/03.mpeg" onchange="audioFunction(this)"/>
+      <label for="checkbox3">
+      <image id="grid-item3" class="grid-img1" src="emoji/ingredients3.png"
+      alt="1. Blend frozen pineapple or mango like smoothie! 🍍🥭"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group1" id="checkbox4"
+      data-audio="sound/04.mpeg" onchange="audioFunction(this)"/>
+      <label for="checkbox4">
+      <image id="grid-item4" class="grid-img1" src="emoji/ingredients4.png"
+      alt="1. Prepare 8 oz crushed ice and add 1 oz lilet Blanc! 🧊"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group2" id="checkbox5"
+      data-audio="sound/05.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox5">
+      <image id="grid-item5" class="grid-img2" src="emoji/mood1.png"
+      alt="2.  Add 4 oz sparkling wine! 🍾"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group2" id="checkbox6"
+      data-audio="sound/06.mpeg" onchange="audioFunction(this)"/>
+      <label for="checkbox6">
+      <image id="grid-item6" class="grid-img2" src="emoji/mood2.png"
+      alt="2. Add 2 oz gin! 💎"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group2" id="checkbox7"
+      data-audio="sound/07.mpeg" onchange="audioFunction(this)"/>
+      <label for="checkbox7">
+      <image id="grid-item7" class="grid-img2" src="emoji/mood3.png"
+      alt="2. Add 2 oz rye whiskey or bourbon! 🥃"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group2" id="checkbox8"
+      data-audio="sound/08.mpeg" onchange="audioFunction(this)"/>
+      <label for="checkbox8">
+      <image id="grid-item8" class="grid-img2" src="emoji/mood4.png"
+      alt="2. Add 1 oz Campari and 1 oz vermouth! 🎈"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group3" id="checkbox9"
+      data-audio="sound/09.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox9">
+      <image id="grid-item9" class="grid-img3" src="emoji/location1.png"
+      alt="3. Shake with tonic water! 💫"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group3" id="checkbox10"
+      data-audio="sound/10_1.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox10">
+      <image id="grid-item10" class="grid-img3" src="emoji/location2.png"
+      alt="3. Strain into chilled glass! 🌊"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group3" id="checkbox11"
+      data-audio="sound/11.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox11">
+      <image id="grid-item11" class="grid-img3" src="emoji/location3.png"
+      alt="3. Do not stir! ❌"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group3" id="checkbox12"
+      data-audio="sound/12.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox12">
+      <image id="grid-item12" class="grid-img3" src="emoji/location4.png"
+      alt="3. Shake with ice! 🧊"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group4" id="checkbox13"
+      data-audio="sound/13.mpeg" onchange="audioFunction(this)"/>
+      <label for="checkbox13">
+      <image id="grid-item13" class="grid-img4" src="emoji/food1.png"
+      alt="4. Garnish with orange twist! 🍊"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group4" id="checkbox14"
+      data-audio="sound/14.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox14">
+      <image id="grid-item14" class="grid-img4" src="emoji/food2.png"
+      alt="4. Add ice to fill glass and garnish with lemon twist! 🧊🍋"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group4" id="checkbox15"
+      data-audio="sound/15.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox15">
+      <image id="grid-item15" class="grid-img4" src="emoji/food3.png"
+      alt="4. Garnish with lime slices and mint bouquet! 🌱"
+      onclick="myFunction(this)"/></label><audio id="audio"></audio>
+
+      <input type="checkbox" className="check" name="group4" id="checkbox16"
+      data-audio="sound/16.mp3" onchange="audioFunction(this)"/>
+      <label for="checkbox16">
+      <image id="grid-item16" class="grid-img4" src="emoji/food4.png"
+      alt="4. Add ice to fill glass and no garnish! 🧊"
+      onclick="myFunction(this)"/>
+      </label><audio id="audio"></audio>
+
     </div>
 
     <div id="myModal" class="modal">
@@ -642,6 +429,7 @@
 </html>
 
 <script>
+
   function play(sound){
    var audio = document.getElementById("audio");
     audio.setAttribute('src', sound);
@@ -662,7 +450,6 @@
   var location_;
   var gotobar = document.getElementById("goBar");
 
-  //var bar_url = ("<a href='bar.html'>Are you ready with your drink? 👌 Let's go to the bar! 👉</a>")
   var mountain_url =
     "<a href='mountain.html'>Are you ready with your drink? 👌 Let's go to the bar! 👉</a>";
   var beach_url =
@@ -672,15 +459,12 @@
   var sky_url =
     "<a href='sky.html'>Are you ready with your drink? 👌 Let's go to the bar! 👉</a>";
 
-  //var modalString = [];
-
   function audioFunction(id){
   var audio = id.getAttribute("data-audio")
     //modalString.push(altText);
     var audio = new Audio(audio);
     console.log(audio)
     console.log(id.checked)
-
 
     if (id.checked) {
       audio.play();
@@ -690,18 +474,9 @@
     }
 }
 
-
   function myFunction(id) {
     var altText = id.alt;
     var display = "";
-
-
-    //modalString.push(altText);
-
-    //disable checkboxes after value put into var's
-    // if (firstRow && secondRow && thirdRow && fourRow) {
-    //   submit();
-    // }
 
     if (id.className === "grid-img1") {
       firstRow = altText;
@@ -762,12 +537,6 @@
     e4.appendChild(t4);
     captionText.appendChild(e4);
 
-    // document.getElementById("goBar").innerHTML = "Lets go to the bar!";
-
-    // function theFunction(){
-    //   document.getElementById("goBar").innerHTML = "Lets go to the bar!";
-    // }
-
     var span = document.getElementsByClassName("close")[0];
 
     span.onclick = function () {
@@ -778,15 +547,5 @@
     $('#myModal').on('hide', function() {
     window.location.reload();
     });
-    /*
-    var checkis = document.querySelectorAll(
-      'input[type="checkbox"]:not(:checked)'
-    );
-    console.log(checkis);
-
-    for (var i = 0; i < checkis.length; i++) {
-      checkis[i].nextSibling.classList.add("hidden");
-    }
-    */
   }
 </script>
