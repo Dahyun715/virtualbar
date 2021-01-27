@@ -49,6 +49,7 @@
         height: auto;
         display: block;
         margin: 0px;
+
       }
       h1 {
         color: #ffffff;
@@ -59,14 +60,6 @@
         margin-block-start: 0.25em;
         margin-block-end: 0em;
         margin-left: 0.4em;
-        animation-name: spin;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
-      }
-      @keyframes spin {
-        from { transform: rotateX(0deg); }
-        to { transform: rotateX(-360deg); }
       }
       h2{
         color: #ffffff;
@@ -77,14 +70,6 @@
         margin-block-start: 0.25em;
         margin-block-end: 0em;
         margin-right: 0.3em;
-        animation-name: spin;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
-      }
-      @keyframes spin {
-        from { transform: rotateX(0deg); }
-        to { transform: rotateX(-360deg); }
       }
       .grid-container {
         display: grid;
@@ -114,90 +99,6 @@
       #grid-item16:hover {
         opacity: 0.65;
         cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>👆</text></svg>") 16 0,auto;
-      }
-      /* The Modal (background) */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 0px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: scroll; /* Enable scroll if needed */
-        background: rgb(214,182,212);
-        background: radial-gradient(circle, rgba(214,182,212,1) 0%, rgba(85,70,203,1) 100%);
-      }
-      /* Modal Content (image) */
-      .modal-content {
-        margin: auto;
-        display: block;
-        width: 100%;
-        height: 100%;
-        max-width: 1200px;
-      }
-      /* Caption of Modal Image */
-      #caption {
-        margin: auto;
-        display: block;
-        width: 100%;
-        max-width: 90%;
-        text-align: center;
-        font-size: 2.5vw;
-        color: #1C584B;
-        padding: 10px 0;
-        height: 400px;
-      }
-      #goBar{
-        text-align: center;
-        font-size: 2.5vw;
-        color: #1C584B;
-      }
-      /* Add Animation */
-      .modal-content,
-      #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-      }
-      @-webkit-keyframes zoom {
-        from {
-          -webkit-transform: scale(0);
-        }
-        to {
-          -webkit-transform: scale(1);
-        }
-      }
-      @keyframes zoom {
-        from {
-          transform: scale(0);
-        }
-        to {
-          transform: scale(1);
-        }
-      }
-      /* The Close Button */
-      .close {
-        position: absolute;
-        top: 0.2vw;
-        right: 1.5vw;
-        color: #ffffff;
-        font-size: 3vw;
-        font-weight: bold;
-        transition: 0.3s;
-      }
-      .close:hover,
-      .close:focus {
-        text-decoration: none;
-        cursor: pointer;
-      }
-      /* 100% Image Width on Smaller Screens */
-      @media only screen and (max-width: 700px) {
-        .modal-content {
-          width: 100%;
-        }
       }
       img {
         transition-duration: 0.4s;
@@ -284,9 +185,98 @@
       }
       #ttlForRec:hover {
       }
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 0px; /* Location of the box */
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: scroll; /* Enable scroll if needed */
+        background: rgb(214,182,212);
+        background: radial-gradient(circle, rgba(214,182,212,1) 0%, rgba(85,70,203,1) 100%);
+      }
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+      }
+      .modal-backdrop {
+        z-index: 0;
+      }
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 90%;
+        text-align: center;
+        font-size: 2.5vw;
+        color: #1C584B;
+        padding: 10px 0;
+        height: 400px;
+      }
+      #goBar{
+        text-align: center;
+        font-size: 2.5vw;
+        color: #1C584B;
+      }
+      /* Add Animation */
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(0);
+        }
+        to {
+          -webkit-transform: scale(1);
+        }
+      }
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 0.2vw;
+        right: 1.5vw;
+        color: #ffffff;
+        font-size: 3vw;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .close:hover,
+      .close:focus {
+        text-decoration: none;
+        cursor: pointer;
+      }
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px) {
+        .modal-content {
+          width: 100%;
+        }
+      }
       audio {
         display:none;
       }
+
     </style>
   </head>
 
@@ -414,11 +404,11 @@
       </label><audio id="audio"></audio>
 
     </div>
-
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
       <div id="ttlForRec">📝 The recipe for your cocktail is here 👇</div>
       <div style="background-image: url('background/paper.png'); background-repeat : no-repeat; background-size: 80% 80%; background-position: top 0vw center;">
+      <br>
       <br>
       <br>
       <div id="caption"></div>
@@ -472,7 +462,7 @@
     } else {
       audio.pause();
     }
-}
+  }
 
   function myFunction(id) {
     var altText = id.alt;
@@ -508,14 +498,13 @@
     if (id.className === "grid-img4") {
       fourRow = altText;
     }
-
     // check if we have 4 strings
     if (firstRow && secondRow && thirdRow && fourRow) {
       showModal();
     }
   }
-
   function showModal() {
+
     var modal = document.getElementById("myModal");
     var captionText = document.getElementById("caption");
 
@@ -543,9 +532,5 @@
       modal.style.display = "none";
       captionText.innerHTML = " ";
     };
-
-    $('#myModal').on('hide', function() {
-    window.location.reload();
-    });
   }
 </script>
